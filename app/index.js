@@ -1,8 +1,10 @@
 var express = require('express');
 var app = express();
 
+
 app.get('/', function(request, response) {
-   response.send("Got the root!!");
+   var motivation = require('motivations');
+   response.send(motivation[3]);
 });
 
 
