@@ -3,7 +3,7 @@ const host = process.env.HOST || '0.0.0.0';
 const express = require('express');
 const app = express();
 
-//app.use(require('./app'));
+app.use(require('./app'));
 
 app.listen(port, host);
 
